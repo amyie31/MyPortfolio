@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.curly-font {
+    font-family: Edwardian Script ITC;
+}
+
+p,
+small,
+button {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home {
+    width: 100%;
+    background-position: top;
+    height: 120vh;
+    background-size: cover;
+    background-image: linear-gradient(62deg,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.6) 80%),
+        url("../img/professional-woman.jpg");
+}
+
+#nav_container.active {
+    position: fixed;
+    z-index: 100;
+    background: #bebebd;
+    color: black;
+    top: 0;
+    left: 0;
+    font-family: Edwardian Script ITC;
+}
+
+#nav_container a{
+    color: white !important;
+}
+
+#nav_container.active a{    
+    color: black !important; 
+
+}
+main {
+    height: 100vh;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about_heading::after {
+    content: '';
+    position: absolute;
+    border: 20px double transparent;
+    border-bottom: 5px double #ddd;
+    width: 80px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.service {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.top {
+    margin-bottom: 3px;
+    width: 44px
+}
+
+.bottom {
+    height: 2px;
+    margin: 0 auto;
+    width: 77px
+}
+
+.portfolio {
+    margin-bottom: 80px;
+}
+
+.contact {
+    padding-right: 40%;
+}
+
+.info {
+    padding-bottom: 70px;
+}
+
+.form-text {
+    padding-top: 40px;
+    color: white;
+}
+
+.form-text input,
+.form-text textarea {
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid #f5f5f5 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 767px) {
+    #nav_container {
+        position: static;
+    }
+}
